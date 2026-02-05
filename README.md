@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/agron.png" alt="Agron Logo" width="300"/>
+</div>
+
 # agron
 
 Agron is a lightweight Go library for AES-GCM authenticated encryption with pluggable key loaders. It provides secure encryption/decryption with associated data (AAD) support and convenient key management through environment variables or files.
