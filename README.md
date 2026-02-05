@@ -17,7 +17,7 @@ Agron is a lightweight Go library for AES-GCM authenticated encryption with plug
 ## Installation
 
 ```bash
-go get github.com/yourusername/agron
+go get github.com/elbader17/agron
 ```
 
 ## Usage
