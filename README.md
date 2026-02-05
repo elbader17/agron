@@ -26,7 +26,7 @@ package main
 import (
     "fmt"
     "log"
-    "github.com/yourusername/agron"
+    "github.com/elbader17/agron"
 )
 
 func main() {
