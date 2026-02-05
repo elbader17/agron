@@ -37,7 +37,6 @@ func NewVault(masterKey []byte) (*Vault, error) {
 	return &Vault{gcm: gcm}, nil
 }
 
-// Encrypt: Encripta data usando un contexto (AAD)
 func (v *Vault) Encrypt(plaintext, context []byte) ([]byte, error) {
 	nonce := make([]byte, v.gcm.NonceSize())
 	if _, err := io.ReadFull(rand.Reader, nonce); err != nil {
@@ -46,7 +45,6 @@ func (v *Vault) Encrypt(plaintext, context []byte) ([]byte, error) {
 	return v.gcm.Seal(nonce, nonce, plaintext, context), nil
 }
 
-// Decrypt: Desencripta validando el contexto
 func (v *Vault) Decrypt(ciphertext, context []byte) ([]byte, error) {
 	nonceSize := v.gcm.NonceSize()
 	if len(ciphertext) < nonceSize {
