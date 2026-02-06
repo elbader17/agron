@@ -1,20 +1,39 @@
 <div align="center">
-  <img src="assets/agron.png" alt="Agron Logo" width="300"/>
+  <img src="assets/agron.png" alt="Agron Logo" width="180"/>
+  
+  <h1>Agron</h1>
+  
+  <p>
+    <strong>Secure, lightweight, and flexible AES-GCM encryption for Go.</strong>
+  </p>
+
+  <p>
+    <a href="https://goreportcard.com/report/github.com/elbader17/agron">
+      <img src="https://goreportcard.com/badge/github.com/elbader17/agron" alt="Go Report Card">
+    </a>
+    <a href="https://pkg.go.dev/github.com/elbader17/agron">
+      <img src="https://pkg.go.dev/badge/github.com/elbader17/agron.svg" alt="GoDoc">
+    </a>
+    <img src="https://img.shields.io/github/license/elbader17/agron" alt="License">
+    <img src="https://img.shields.io/badge/Go-1.21+-00ADD8?logo=go&logoColor=white" alt="Go Version">
+  </p>
+  
+  <br />
 </div>
 
-# agron
+**Agron** is a lightweight Go library designed for **AES-GCM authenticated encryption** with a focus on developer experience. It features pluggable key loaders, support for Associated Data (AAD), and zero external dependencies.
 
-Agron is a lightweight Go library for AES-GCM authenticated encryption with pluggable key loaders. It provides secure encryption/decryption with associated data (AAD) support and convenient key management through environment variables or files.
+---
 
-## Features
+## ⚡ Features
 
-- **AES-256-GCM encryption** with authenticated encryption
-- **Context-aware encryption** using Associated Data (AAD)
-- **Pluggable key loaders** for flexible key management
-- **Zero external dependencies** - uses only Go standard library
-- **Tamper detection** - ciphertext integrity verification
+- 🔒 **AES-256-GCM Encryption:** Industrial-grade authenticated encryption.
+- 🛡️ **Context-Aware:** Bind encryption to specific contexts (AAD) for tamper resistance.
+- 🔌 **Pluggable Architecture:** Flexible key management via Environment variables or Files.
+- 📦 **Zero Dependencies:** Built entirely with the Go standard library.
+- 🚀 **Docker Ready:** Native support for Docker Secrets.
 
-## Installation
+## 📥 Installation
 
 ```bash
 go get github.com/elbader17/agron
